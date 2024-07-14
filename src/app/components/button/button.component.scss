@@ -1,0 +1,23 @@
+.botao-primario {
+  width: auto; // O tamanho do botão será o tamanho do texto
+  outline: none; // Remove a borda do botão
+  border: 0; // Remove a borda do botão
+  background: #7533a8; // Cor de fundo do botão
+  color: #fff; // Cor do texto do botão
+  font-weight: 400; // Espessura da fonte
+  font-size: 16px; // Tamanho da fonte
+  padding: 6px 20px; // Espaçamento interno do botão
+  border-radius: 3px; // Borda arredondada
+  box-shadow: 0px 0px 3px 1px #0a0a0a20; // Sombra do botão, para dar um efeito de elevação
+  transition: 0.3s linear all; // Transição para suavizar a mudança de cor do botão
+
+  // & é uma referência ao próprio elemento
+  &:hover {
+    cursor: pointer; // Muda o cursor do mouse para a mãozinha
+    box-shadow: 0px 0px 5px 3px #0a0a0a40; // Aumenta a sombra do botão
+  }
+  &:disabled {
+    cursor: default; // Muda o cursor do mouse para o padrão
+    opacity: 0.7; // Diminui a opacidade do botão
+  }
+}
