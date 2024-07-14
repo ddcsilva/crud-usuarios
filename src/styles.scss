@@ -1,11 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+/* Você pode adicionar estilos globais a este arquivo e também importar outros arquivos de estilo */
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 html,
 body {
-  height: 100%;
+  height: 100%; // Define a altura do corpo e do HTML como 100% para ocupar toda a tela
 }
 body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0; // Remove a margem padrão do corpo
+  font-family: Roboto, "Helvetica Neue", sans-serif; // Define a fonte padrão do corpo
+}
+
+// :root é uma pseudo-classe que define variáveis globais
+:root {
+  --primary-color: #7533a8; // Cor primária do projeto
+  --error-color: #ac2828; // Cor de erro do projeto
+  --gray-color: #747474; // Cor cinza do projeto
+}
+
+// .c-primary é uma classe que define a cor primária do projeto
+.c-primary {
+  color: var(--primary-color);
+}
+
+// .c-error é uma classe que define a cor de erro do projeto
+.c-error {
+  color: var(--error-color);
+}
+
+// .c-gray é uma classe que define a cor cinza do projeto
+.c-gray {
+  color: var(--gray-color);
+}
+
+.hover:hover {
+  cursor: pointer; // Muda o cursor do mouse para a mãozinha
 }
