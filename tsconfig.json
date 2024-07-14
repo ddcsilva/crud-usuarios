@@ -1,31 +1,31 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "compileOnSave": false, // Compila automaticamente ao salvar
+  "compileOnSave": false,
   "compilerOptions": {
-    // Opções do compilador
-    "strictPropertyInitialization": false, // Serve para desabilitar a verificação de inicialização de propriedades
-    "outDir": "./dist/out-tsc", // Diretório de saída
-    "strict": true, // Habilita todas as opções de verificação de tipo
-    "noImplicitOverride": true, // Habilita a verificação de substituição de métodos
-    "noPropertyAccessFromIndexSignature": true, // Habilita a verificação de acesso a propriedades de índice
-    "noImplicitReturns": true, // Habilita a verificação de retorno implícito
-    "noFallthroughCasesInSwitch": true, // Habilita a verificação de casos de queda em switch
-    "skipLibCheck": true, // Pula a verificação de biblioteca
-    "esModuleInterop": true, // Habilita a interoperabilidade do ES Module
-    "sourceMap": true, // Gera arquivos de mapa de origem
-    "declaration": false, // Gera arquivos de declaração
-    "experimentalDecorators": true, // Habilita a sintaxe de decoradores
-    "moduleResolution": "node", // Define como os módulos são resolvidos
-    "importHelpers": true, // Importa helpers de tslib
-    "target": "ES2022", // Define a versão do ECMAScript
-    "module": "ES2022", // Define o sistema de módulos
-    "useDefineForClassFields": false, // Usa defineProperty para inicializar campos de classe
-    "lib": ["ES2022", "dom"] // Define as bibliotecas incluídas
+    "strictPropertyInitialization": false,
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
-    // Opções do compilador Angular
-    "enableI18nLegacyMessageIdFormat": false, // Habilita o formato de ID de mensagem legado
-    "strictInjectionParameters": true, // Habilita a verificação de parâmetros de injeção
-    "strictInputAccessModifiers": true, // Habilita a verificação de modificadores de acesso de entrada
-    "strictTemplates": true // Habilita a verificação de modelos estritos
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
   }
 }
