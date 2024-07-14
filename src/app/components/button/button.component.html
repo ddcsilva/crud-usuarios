@@ -1,1 +1,3 @@
-<button class="botao-primario">{{ texto }}</button>
+<button class="botao-primario" [ngClass]="{ 'w-100': tamanho === '100' }">
+  {{ texto }}
+</button>

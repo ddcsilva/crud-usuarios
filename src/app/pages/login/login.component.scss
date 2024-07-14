@@ -1,0 +1,121 @@
+.area-login-background {
+  // Define a altura da área de login como 100% para ocupar toda a tela
+  height: 100%;
+  // Define a largura da área de login como 55% para ocupar 55% da tela
+  width: 55%;
+  // Define a exibição da área de login como bloco, para ocupar toda a largura disponível
+  display: block;
+  // Define a flutuação da área de login como à esquerda
+  float: left;
+  // Define a imagem de fundo da área de login
+  background-image: url("../../../assets/background-login.png");
+  // Define a cor de fundo da área de login como a cor primária do projeto
+  background-color: var(--primary-color);
+  // Define para redimensionar a imagem de fundo da área de login para 100% de largura e altura automática
+  background-size: 100% auto;
+  // Define para posicionar a imagem de fundo da área de login no centro inferior
+  background-position: center bottom;
+  // Define para não repetir a imagem de fundo da área de login
+  background-repeat: no-repeat;
+}
+
+.area-form {
+  // Define a altura da área de formulário como 100% para ocupar toda a tela
+  height: 100%;
+  // Define a largura da área de formulário como 45% para ocupar 45% da tela
+  width: 45%;
+  // Define a flutuação da área de formulário como à esquerda
+  float: left;
+  // Define a cor de fundo da área de formulário como branco
+  background: #fff;
+  // Define para exibir os elementos da área de formulário em linha
+  display: flex;
+  // Define para alinhar os elementos da área de formulário no centro
+  align-items: center;
+  // Define para justificar os elementos da área de formulário no centro
+  justify-content: center;
+  // Define para envolver os elementos da área de formulário
+  flex-wrap: nowrap;
+}
+
+// Define a largura da área de formulário como 100% quando a tela tiver no máximo 767 pixels de largura
+@media only screen and (max-width: 767px) {
+  .area-form {
+    width: 100%;
+  }
+}
+
+.titulo {
+  // Define o tamanho da fonte do título como 26 pixels
+  font-size: 26px;
+  // Define o peso da fonte do título como negrito
+  font-weight: bold;
+  // Define o alinhamento do texto do título como centralizado
+  text-align: center;
+  // Define o espaçamento entre as letras do título como 7 pixels
+  letter-spacing: 7px;
+  // Define a cor do título como a cor primária do projeto
+  color: var(--primary-color);
+  // Define a margem do título como 0 pixels na parte superior, 0 pixels na parte direita, 0 pixels na parte inferior e 6 pixels na parte esquerda
+  padding: 0;
+  // Define a margem do título como 0 pixels na parte superior, 0 pixels na parte direita, 0 pixels na parte inferior e 6 pixels na parte esquerda
+  margin-bottom: 6px;
+}
+
+.subtitulo {
+  // Define o tamanho da fonte do subtítulo como 16 pixels
+  font-size: 16px;
+  // Define o peso da fonte do subtítulo como leve
+  font-weight: 300;
+  // Define a cor do subtítulo como a cor cinza do projeto
+  color: var(--gray-color);
+  // Define a margem do subtítulo como 0 pixels na parte superior, 0 pixels na parte direita, 30 pixels na parte inferior e 0 pixels na parte esquerda
+  margin: 0px 0px 30px 0px;
+  // Define a margem do subtítulo como 0 pixels na parte superior, 0 pixels na parte direita, 30 pixels na parte inferior e 0 pixels na parte esquerda
+  padding: 0;
+  // Define o alinhamento do texto do subtítulo como centralizado
+  text-align: center;
+}
+
+.input-form {
+  outline: none;
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #00000000;
+  margin-bottom: 32px;
+  transition: 0.3s linear all;
+  box-shadow: inset 1px 1px 2px #aaadb980, inset -1px -1px 2px #bebebeb0;
+  &:focus {
+    border: 1px solid var(--primary-color);
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 4px;
+  font-size: 10px;
+  color: var(--primary-color);
+}
+
+.botao-login {
+  width: 100%;
+  outline: none;
+  border: 0;
+  background: #7533a8;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 6px 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px 1px #0a0a0a20;
+  transition: 0.3s linear all;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 3px #0a0a0a40;
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+}
